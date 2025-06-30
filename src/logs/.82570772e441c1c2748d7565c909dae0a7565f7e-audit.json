@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\Working\\Fintex\\backend\\src\\logs\\.82570772e441c1c2748d7565c909dae0a7565f7e-audit.json",
+    "files": [
+        {
+            "date": 1751201124449,
+            "name": "E:\\Working\\Fintex\\backend\\src\\logs\\combined-2025-06-29.log",
+            "hash": "d73f74c814defd6ebc1e2214b589445346592250b1a3c3aea14e2dcce8a45c0f"
+        },
+        {
+            "date": 1751262678457,
+            "name": "E:\\Working\\Fintex\\backend\\src\\logs\\combined-2025-06-30.log",
+            "hash": "4676eedfb3d75ba2dfd0f12d88b3b98d2dcf94d1a2b5a777b2e1fccae799a4c1"
+        }
+    ],
+    "hashType": "sha256"
+}

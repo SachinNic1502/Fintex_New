@@ -1,0 +1,57 @@
+2025-06-30 11:21:18 [ERROR]: ValidationError: User validation failed: companyName: Path `companyName` is required.
+    at Document.invalidate (E:\Working\Fintex\backend\node_modules\mongoose\lib\document.js:3219:32)
+    at E:\Working\Fintex\backend\node_modules\mongoose\lib\document.js:3012:17
+    at E:\Working\Fintex\backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-06-30 11:21:18 [INFO]: 	::1 - - [30/Jun/2025:05:51:18 +0000] "POST /api/v1/auth/register HTTP/1.1" 500 557 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:22:20 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:22:20 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:22:20 [INFO]: 	MongoDB connected
+2025-06-30 11:22:20 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:22:22 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:22:45 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:22:45 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:22:45 [INFO]: 	MongoDB connected
+2025-06-30 11:22:45 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:22:47 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:23:50 [INFO]: 	::1 - - [30/Jun/2025:05:53:50 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 950 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:23:54 [INFO]: 	Email sent to jane.smith@example.com: <78175cc5-aacf-2b79-c2f8-fd3d9b4fdb1a@fintex.com>
+2025-06-30 11:25:53 [INFO]: 	::1 - - [30/Jun/2025:05:55:53 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 956 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:25:57 [INFO]: 	Email sent to mike.j@example.com: <85041f75-f743-b11a-bc61-48ed1aff0807@fintex.com>
+2025-06-30 11:27:45 [ERROR]: Error: Your account is pending approval. Please contact support for more information.
+    at Object.login (E:\Working\Fintex\backend\src\controllers\auth.controller.js:194:11)
+2025-06-30 11:27:45 [INFO]: 	::1 - - [30/Jun/2025:05:57:45 +0000] "POST /api/v1/auth/login HTTP/1.1" 403 296 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:30:01 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:30:01 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:30:01 [INFO]: 	MongoDB connected
+2025-06-30 11:30:01 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:30:03 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:30:17 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:30:17 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:30:17 [INFO]: 	MongoDB connected
+2025-06-30 11:30:17 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:30:20 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:30:29 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:30:29 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:30:29 [INFO]: 	MongoDB connected
+2025-06-30 11:30:29 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:30:31 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:32:32 [ERROR]: ReferenceError: httpStatus is not defined
+    at E:\Working\Fintex\backend\src\routes\user.route.js:93:18
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-30 11:32:32 [INFO]: 	::1 - - [30/Jun/2025:06:02:32 +0000] "GET /api/v1/users/pending-approvals HTTP/1.1" 500 257 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:34:04 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:34:04 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:34:04 [INFO]: 	MongoDB connected
+2025-06-30 11:34:04 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:34:07 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:34:15 [INFO]: 	::1 - - [30/Jun/2025:06:04:15 +0000] "GET /api/v1/users/pending-approvals HTTP/1.1" 200 1010 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:35:37 [INFO]: 	::1 - - [30/Jun/2025:06:05:37 +0000] "POST /api/v1/users/approve/6862266e2f787782101e3f46 HTTP/1.1" 200 546 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:35:44 [INFO]: 	::1 - - [30/Jun/2025:06:05:44 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 988 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:36:53 [INFO]: 	::1 - - [30/Jun/2025:06:06:53 +0000] "GET /api/v1/users/6862266e2f787782101e3f46 HTTP/1.1" 404 52 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:37:28 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:37:28 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:37:28 [INFO]: 	MongoDB connected
+2025-06-30 11:37:28 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:37:30 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:37:35 [INFO]: 	::1 - - [30/Jun/2025:06:07:35 +0000] "GET /api/v1/users/6862266e2f787782101e3f46 HTTP/1.1" 404 52 "-" "PostmanRuntime/7.44.1"

@@ -1,0 +1,29 @@
+2025-06-29 20:12:50 [ERROR]: Error: getaddrinfo ENOTFOUND smtp.example.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+2025-06-29 20:13:00 [ERROR]: Error: getaddrinfo ENOTFOUND smtp.example.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+2025-06-29 20:14:09 [ERROR]: Error: getaddrinfo ENOTFOUND smtp.example.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+2025-06-29 20:15:15 [ERROR]: Error: getaddrinfo ENOTFOUND smtp.example.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+2025-06-29 20:15:15 [ERROR]: Error: Failed to connect to email server
+    at EmailService.verifyConnection (E:\Working\Fintex\backend\src\services\email.service.js:57:13)
+2025-06-29 20:43:02 [ERROR]: Error: getaddrinfo ENOTFOUND smtp.example.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+2025-06-29 20:43:02 [ERROR]: Error: Failed to connect to email server
+    at EmailService.verifyConnection (E:\Working\Fintex\backend\src\services\email.service.js:57:13)
+2025-06-29 23:20:32 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (E:\Working\Fintex\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateRefreshToken (E:\Working\Fintex\backend\src\controllers\auth.controller.js:51:14)
+    at Object.login (E:\Working\Fintex\backend\src\controllers\auth.controller.js:193:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-29 23:21:41 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (E:\Working\Fintex\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateRefreshToken (E:\Working\Fintex\backend\src\controllers\auth.controller.js:51:14)
+    at Object.login (E:\Working\Fintex\backend\src\controllers\auth.controller.js:193:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-29 23:23:40 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (E:\Working\Fintex\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateRefreshToken (E:\Working\Fintex\backend\src\controllers\auth.controller.js:51:14)
+    at Object.login (E:\Working\Fintex\backend\src\controllers\auth.controller.js:193:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

@@ -1,0 +1,10 @@
+2025-06-30 11:21:18 [ERROR]: ValidationError: User validation failed: companyName: Path `companyName` is required.
+    at Document.invalidate (E:\Working\Fintex\backend\node_modules\mongoose\lib\document.js:3219:32)
+    at E:\Working\Fintex\backend\node_modules\mongoose\lib\document.js:3012:17
+    at E:\Working\Fintex\backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-06-30 11:27:45 [ERROR]: Error: Your account is pending approval. Please contact support for more information.
+    at Object.login (E:\Working\Fintex\backend\src\controllers\auth.controller.js:194:11)
+2025-06-30 11:32:32 [ERROR]: ReferenceError: httpStatus is not defined
+    at E:\Working\Fintex\backend\src\routes\user.route.js:93:18
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
