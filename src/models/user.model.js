@@ -47,10 +47,20 @@ const userSchema = new mongoose.Schema(
       trim: true,
       match: [/^[0-9]{10,15}$/, 'Please use a valid phone number.'],
     },
+    // Authentication
     password: {
       type: String,
       required: true,
       minlength: 8,
+      private: true, // Don't include in JSON responses
+      select: false, // Don't include in query results by default
+    },
+    resetPasswordToken: {
+      type: String,
+      select: false,
+    },
+    resetPasswordExpires: {
+      type: Date,
       select: false,
     },
     dateOfBirth: {

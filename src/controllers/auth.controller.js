@@ -1,5 +1,6 @@
 const httpStatus = require('http-status');
 const jwt = require('jsonwebtoken');
+const crypto = require('crypto');
 const { omit, pick } = require('lodash');
 const { User, ROLES } = require('../models/user.model');
 const ApiError = require('../utils/ApiError');
@@ -88,9 +89,10 @@ const getUserData = (user) => {
 /**
  * Create a user account
  * @param {Object} userBody - User registration data
+ * @param {boolean} [isAdminRequest=false] - Whether the request is from an admin
  * @returns {Promise<Object>} User object with tokens
  */
-const register = async (userBody) => {
+const register = async (userBody, isAdminRequest = false) => {
   // Check if email is already taken
   if (await User.isEmailTaken(userBody.email)) {
     throw new ApiError(httpStatus.BAD_REQUEST, 'Email already taken');
@@ -116,8 +118,14 @@ const register = async (userBody) => {
       );
     }
     
-    // Set isApproved to false by default for non-customer roles
-    userBody.isApproved = false;
+    // Auto-approve if request is from admin, otherwise require approval
+    userBody.isApproved = isAdminRequest;
+    
+    // If admin is creating the account, set as active by default
+    if (isAdminRequest) {
+      userBody.isActive = true;
+      userBody.isEmailVerified = true;
+    }
   } else {
     // For customers, ensure companyName is not set
     delete userBody.companyName;
@@ -397,18 +405,158 @@ const changePassword = async (userId, currentPassword, newPassword) => {
   
   // Update password
   user.password = newPassword;
-  user.lastPasswordChange = new Date();
+  user.tokenVersion = (user.tokenVersion || 0) + 1; // Invalidate all tokens
   await user.save();
+  
+  // Send password change confirmation email
+  emailService.sendPasswordChangeConfirmation(user.email, `${user.firstName} ${user.lastName}`.trim() || user.email)
+    .catch(error => logger.error('Failed to send password change confirmation:', error));
+};
+
+/**
+ * Request password reset
+ * @param {string} email - User's email
+ * @returns {Promise<void>}
+ */
+const forgotPassword = async (email) => {
+  const user = await User.findOne({ email });
+  
+  if (!user) {
+    // For security reasons, don't reveal if the email exists or not
+    logger.info(`Password reset requested for non-existent email: ${email}`);
+    return;
+  }
+  
+  // Generate reset token (expires in 1 hour)
+  const resetToken = crypto.randomBytes(32).toString('hex');
+  const resetTokenExpiry = Date.now() + 3600000; // 1 hour from now
+  
+  user.resetPasswordToken = crypto
+    .createHash('sha256')
+    .update(resetToken)
+    .digest('hex');
+  user.resetPasswordExpires = resetTokenExpiry;
+  
+  await user.save({ validateBeforeSave: false });
+  
+  // Send email with reset link
+  const resetUrl = `${process.env.FRONTEND_URL || 'http://localhost:3000'}/reset-password/${resetToken}`;
+  
+  // Log the reset link in development
+  if (process.env.NODE_ENV !== 'production') {
+    logger.info(`Password reset link for ${user.email}: ${resetUrl}`);
+    logger.info(`Reset token: ${resetToken}`);
+  }
+  
+  try {
+    await emailService.sendPasswordResetEmail(
+      user.email,
+      user.firstName || user.email,
+      resetToken,
+      resetUrl
+    );
+    logger.info(`Password reset email sent to ${user.email}`);
+  } catch (error) {
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpires = undefined;
+    await user.save({ validateBeforeSave: false });
+    
+    logger.error('Error sending password reset email:', error);
+    throw new ApiError(
+      httpStatus.INTERNAL_SERVER_ERROR,
+      'There was an error sending the password reset email. Please try again later.'
+    );
+  }
+};
+
+/**
+ * Reset password using token
+ * @param {string} token - Password reset token
+ * @param {string} password - New password
+ * @returns {Promise<void>}
+ */
+const resetPassword = async (token, password) => {
+  // Hash the token to match the one in database
+  const hashedToken = crypto
+    .createHash('sha256')
+    .update(token)
+    .digest('hex');
+  
+  const user = await User.findOne({
+    resetPasswordToken: hashedToken,
+    resetPasswordExpires: { $gt: Date.now() }
+  });
+  
+  if (!user) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Invalid or expired token');
+  }
+  
+  // Update password and clear reset token
+  user.password = password;
+  user.resetPasswordToken = undefined;
+  user.resetPasswordExpires = undefined;
+  user.tokenVersion = (user.tokenVersion || 0) + 1; // Invalidate all sessions
+  
+  await user.save();
+  
+  // Send confirmation email
+  try {
+    await emailService.sendPasswordResetConfirmation(
+      user.email,
+      user.firstName || user.email
+    );
+    logger.info(`Password reset confirmation email sent to ${user.email}`);
+  } catch (error) {
+    logger.error('Failed to send password reset confirmation email:', error);
+    // Don't throw the error to prevent the password reset from failing
+    // just because the confirmation email couldn't be sent
+  }
 };
 
 module.exports = {
   register,
   login,
   logout,
+  forgotPassword,
+  resetPassword,
   logoutAllDevices,
   refreshAuth,
   changePassword,
   getProfile,
   updateProfile,
+  
+  /**
+   * Update user password
+   * @param {Object} user - The user object from the request
+   * @param {string} currentPassword - Current password
+   * @param {string} newPassword - New password
+   * @returns {Promise<void>}
+   */
+  async updatePassword(user, currentPassword, newPassword) {
+    if (!(await user.isPasswordMatch(currentPassword))) {
+      throw new ApiError(httpStatus.UNAUTHORIZED, 'Current password is incorrect');
+    }
+
+    if (currentPassword === newPassword) {
+      throw new ApiError(httpStatus.BAD_REQUEST, 'New password must be different from current password');
+    }
+
+    user.password = newPassword;
+    user.tokenVersion = (user.tokenVersion || 0) + 1; // Invalidate all sessions
+    await user.save();
+
+    try {
+      // Send password change confirmation email
+      await emailService.sendPasswordChangeConfirmation(
+        user.email,
+        user.firstName || user.email
+      );
+      logger.info(`Password change confirmation sent to ${user.email}`);
+    } catch (error) {
+      logger.error('Failed to send password change confirmation email:', error);
+      // Don't fail the request if email sending fails
+    }
+  },
+  
   ROLES,
 };

@@ -8,3 +8,94 @@
 2025-06-30 11:32:32 [ERROR]: ReferenceError: httpStatus is not defined
     at E:\Working\Fintex\backend\src\routes\user.route.js:93:18
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-30 11:53:29 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:53:29 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:439:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:54:49 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:54:49 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:439:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:55:49 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:55:49 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:439:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:56:03 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:56:03 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:439:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:57:40 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:57:40 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:445:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:58:30 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:58:30 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:445:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 12:02:48 [ERROR]: TypeError: emailService.sendPasswordResetConfirmation is not a function
+    at Object.resetPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:496:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:585:7
+2025-06-30 12:11:07 [ERROR]: Error: Illegal arguments: string, undefined
+    at _async (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:286:46)
+    at E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:306:20)
+    at userSchema.methods.isPasswordMatch (E:\Working\Fintex\backend\src\models\user.model.js:211:17)
+    at Object.updatePassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:529:22)
+    at E:\Working\Fintex\backend\src\routes\auth.route.js:679:28
+    at Layer.handle [as handle_request] (E:\Working\Fintex\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Working\Fintex\backend\node_modules\express\lib\router\route.js:149:13)
+    at E:\Working\Fintex\backend\src\middlewares\validate.js:17:14
+2025-06-30 12:11:18 [ERROR]: Error: Illegal arguments: string, undefined
+    at _async (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:286:46)
+    at E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:306:20)
+    at userSchema.methods.isPasswordMatch (E:\Working\Fintex\backend\src\models\user.model.js:211:17)
+    at Object.updatePassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:529:22)
+    at E:\Working\Fintex\backend\src\routes\auth.route.js:679:28
+    at Layer.handle [as handle_request] (E:\Working\Fintex\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Working\Fintex\backend\node_modules\express\lib\router\route.js:149:13)
+    at E:\Working\Fintex\backend\src\middlewares\validate.js:17:14
+2025-06-30 12:12:32 [ERROR]: Error: Illegal arguments: string, undefined
+    at _async (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:286:46)
+    at E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:306:20)
+    at userSchema.methods.isPasswordMatch (E:\Working\Fintex\backend\src\models\user.model.js:211:17)
+    at Object.updatePassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:529:22)
+    at E:\Working\Fintex\backend\src\routes\auth.route.js:679:28
+    at Layer.handle [as handle_request] (E:\Working\Fintex\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Working\Fintex\backend\node_modules\express\lib\router\route.js:149:13)
+    at E:\Working\Fintex\backend\src\middlewares\validate.js:17:14
+2025-06-30 12:28:35 [ERROR]: Error: ENOENT: no such file or directory, open 'E:\Working\Fintex\backend\src\templates\welcome-email.html'
+    at Object.readFileSync (node:fs:442:20)
+    at EmailService.sendWelcomeEmail (E:\Working\Fintex\backend\src\services\email.service.js:104:27)
+    at Object.register (E:\Working\Fintex\backend\src\controllers\auth.controller.js:149:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:163:22
+2025-06-30 12:28:35 [ERROR]: Error: ENOENT: no such file or directory, open 'E:\Working\Fintex\backend\src\templates\welcome-email.html'
+    at Object.readFileSync (node:fs:442:20)
+    at EmailService.sendWelcomeEmail (E:\Working\Fintex\backend\src\services\email.service.js:104:27)
+    at Object.register (E:\Working\Fintex\backend\src\controllers\auth.controller.js:149:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:163:22

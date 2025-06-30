@@ -55,3 +55,286 @@
 2025-06-30 11:37:28 [INFO]: 	Server running on port 5000 in development mode
 2025-06-30 11:37:30 [INFO]: 	Email server is ready to send messages
 2025-06-30 11:37:35 [INFO]: 	::1 - - [30/Jun/2025:06:07:35 +0000] "GET /api/v1/users/6862266e2f787782101e3f46 HTTP/1.1" 404 52 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:37:50 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:37:50 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:37:50 [INFO]: 	MongoDB connected
+2025-06-30 11:37:50 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:37:52 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:39:14 [INFO]: 	::1 - - [30/Jun/2025:06:09:14 +0000] "GET /api/v1/users/6862266e2f787782101e3f46 HTTP/1.1" 200 546 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:39:32 [INFO]: 	::1 - - [30/Jun/2025:06:09:32 +0000] "GET /api/v1/users/pending-approvals HTTP/1.1" 200 525 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:40:20 [INFO]: 	::1 - - [30/Jun/2025:06:10:20 +0000] "GET /api/v1/health HTTP/1.1" 404 52 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:40:48 [INFO]: 	Health check called
+2025-06-30 11:40:48 [INFO]: 	::1 - - [30/Jun/2025:06:10:48 +0000] "GET /api/health HTTP/1.1" 200 75 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:42:28 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:42:28 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:42:28 [INFO]: 	MongoDB connected
+2025-06-30 11:42:28 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:42:31 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:43:20 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:43:20 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:43:20 [INFO]: 	MongoDB connected
+2025-06-30 11:43:20 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:43:22 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:48:42 [INFO]: 	::1 - - [30/Jun/2025:06:18:42 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 960 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:48:46 [INFO]: 	Email sent to sachinrathodnic1@gmail.com: <7024f04d-5f48-72c8-917e-dfe704e006a1@fintex.com>
+2025-06-30 11:48:55 [INFO]: 	::1 - - [30/Jun/2025:06:18:55 +0000] "POST /api/v1/users/approve/68622c42d56df318e7c0ac6e HTTP/1.1" 200 551 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:49:37 [INFO]: 	::1 - - [30/Jun/2025:06:19:37 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 404 52 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:51:03 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:51:03 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:51:03 [INFO]: 	MongoDB connected
+2025-06-30 11:51:03 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:51:06 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:51:12 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:51:12 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:51:12 [INFO]: 	MongoDB connected
+2025-06-30 11:51:12 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:51:14 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:51:30 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:51:30 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:51:30 [INFO]: 	MongoDB connected
+2025-06-30 11:51:30 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:51:32 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:51:57 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:51:57 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:51:57 [INFO]: 	MongoDB connected
+2025-06-30 11:51:57 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:51:59 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:52:51 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:52:51 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:52:51 [INFO]: 	MongoDB connected
+2025-06-30 11:52:51 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:53:01 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:53:01 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:53:01 [INFO]: 	MongoDB connected
+2025-06-30 11:53:01 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:53:08 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:53:19 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:53:19 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:53:19 [INFO]: 	MongoDB connected
+2025-06-30 11:53:19 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:53:21 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:53:29 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:53:29 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:439:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:53:29 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:53:29 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:53:29 [INFO]: 	::1 - - [30/Jun/2025:06:23:29 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 200 96 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:54:49 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:54:49 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:439:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:54:49 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:54:49 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:54:49 [INFO]: 	::1 - - [30/Jun/2025:06:24:49 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 200 96 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:55:49 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:55:49 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:439:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:55:49 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:55:49 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:55:49 [INFO]: 	::1 - - [30/Jun/2025:06:25:49 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 200 96 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:56:03 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:56:03 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:439:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:56:03 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:56:03 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:56:03 [INFO]: 	::1 - - [30/Jun/2025:06:26:03 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 200 96 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:57:28 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:57:28 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:57:28 [INFO]: 	MongoDB connected
+2025-06-30 11:57:28 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:57:30 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:57:40 [INFO]: 	Password reset link for sachinrathodnic1@gmail.com: http://localhost:3000/reset-password/f4aaa88037aab8e95c37dee4ca5524c01c9f553d27647f968992678e9718120a
+2025-06-30 11:57:40 [INFO]: 	Reset token: f4aaa88037aab8e95c37dee4ca5524c01c9f553d27647f968992678e9718120a
+2025-06-30 11:57:40 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:57:40 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:445:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:57:40 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:57:40 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:57:40 [INFO]: 	::1 - - [30/Jun/2025:06:27:40 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 200 96 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:58:30 [INFO]: 	Password reset link for sachinrathodnic1@gmail.com: http://localhost:3000/reset-password/6dde9e25428e4dbd7e5d44c55b95203c57ea14c54580d960f1ff6af60d0fc2cb
+2025-06-30 11:58:30 [INFO]: 	Reset token: 6dde9e25428e4dbd7e5d44c55b95203c57ea14c54580d960f1ff6af60d0fc2cb
+2025-06-30 11:58:30 [ERROR]: 	Email template undefined not found at E:\Working\Fintex\backend\src\templates\emails\undefined.ejs
+2025-06-30 11:58:30 [ERROR]: Error: Email template undefined not found
+    at EmailService.sendEmail (E:\Working\Fintex\backend\src\services\email.service.js:81:15)
+    at EmailService.sendPasswordResetEmail (E:\Working\Fintex\backend\src\services\email.service.js:179:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.forgotPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:445:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:499:7
+2025-06-30 11:58:30 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:58:30 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:58:30 [INFO]: 	::1 - - [30/Jun/2025:06:28:30 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 200 96 "-" "PostmanRuntime/7.44.1"
+2025-06-30 11:59:09 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:59:09 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:59:09 [INFO]: 	MongoDB connected
+2025-06-30 11:59:09 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:59:11 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:59:17 [INFO]: 	MongoDB connected successfully
+2025-06-30 11:59:17 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 11:59:17 [INFO]: 	MongoDB connected
+2025-06-30 11:59:17 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 11:59:19 [INFO]: 	Email server is ready to send messages
+2025-06-30 11:59:35 [INFO]: 	Password reset link for sachinrathodnic1@gmail.com: http://localhost:3000/reset-password/c40f02838efd1eee58f2a2c22829a234ec1de666f7aa10567a4419f2752cb910
+2025-06-30 11:59:35 [INFO]: 	Reset token: c40f02838efd1eee58f2a2c22829a234ec1de666f7aa10567a4419f2752cb910
+2025-06-30 11:59:39 [INFO]: 	Email sent to sachinrathodnic1@gmail.com: <d3451823-6044-8af3-ce89-fa6fcbe97e0e@fintex.com>
+2025-06-30 11:59:39 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:59:39 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 11:59:40 [INFO]: 	::1 - - [30/Jun/2025:06:29:40 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 200 96 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:02:48 [ERROR]: TypeError: emailService.sendPasswordResetConfirmation is not a function
+    at Object.resetPassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:496:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:585:7
+2025-06-30 12:02:48 [INFO]: 	::1 - - [30/Jun/2025:06:32:48 +0000] "POST /api/v1/auth/reset-password HTTP/1.1" 500 433 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:04:07 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:04:07 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:04:07 [INFO]: 	MongoDB connected
+2025-06-30 12:04:07 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:04:09 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:05:03 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:05:03 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:05:03 [INFO]: 	MongoDB connected
+2025-06-30 12:05:03 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:05:28 [INFO]: 	Password reset link for sachinrathodnic1@gmail.com: http://localhost:3000/reset-password/b9b893a46d4cfff41324122c5d92af3e1435ce85fc4a3af89699a2a77fef6005
+2025-06-30 12:05:28 [INFO]: 	Reset token: b9b893a46d4cfff41324122c5d92af3e1435ce85fc4a3af89699a2a77fef6005
+2025-06-30 12:05:33 [INFO]: 	Email sent to sachinrathodnic1@gmail.com: <0ced8bde-a167-f110-1f48-39b722392718@fintex.com>
+2025-06-30 12:05:33 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 12:05:33 [INFO]: 	Password reset email sent to sachinrathodnic1@gmail.com
+2025-06-30 12:05:33 [INFO]: 	::1 - - [30/Jun/2025:06:35:33 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 200 96 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:05:40 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:06:01 [INFO]: 	Email sent to sachinrathodnic1@gmail.com: <db49b5ee-b550-98f4-df4d-30e6db649e2f@fintex.com>
+2025-06-30 12:06:01 [INFO]: 	Password reset confirmation sent to sachinrathodnic1@gmail.com
+2025-06-30 12:06:01 [INFO]: 	Password reset confirmation email sent to sachinrathodnic1@gmail.com
+2025-06-30 12:06:01 [INFO]: 	::1 - - [30/Jun/2025:06:36:01 +0000] "POST /api/v1/auth/reset-password HTTP/1.1" 200 54 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:06:43 [INFO]: 	::1 - - [30/Jun/2025:06:36:43 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 998 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:07:33 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:07:33 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:07:33 [INFO]: 	MongoDB connected
+2025-06-30 12:07:33 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:07:35 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:07:57 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:07:57 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:07:57 [INFO]: 	MongoDB connected
+2025-06-30 12:07:57 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:08:05 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:08:38 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:08:38 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:08:38 [INFO]: 	MongoDB connected
+2025-06-30 12:08:38 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:08:41 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:09:05 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:09:05 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:09:05 [INFO]: 	MongoDB connected
+2025-06-30 12:09:05 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:09:07 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:11:07 [ERROR]: Error: Illegal arguments: string, undefined
+    at _async (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:286:46)
+    at E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:306:20)
+    at userSchema.methods.isPasswordMatch (E:\Working\Fintex\backend\src\models\user.model.js:211:17)
+    at Object.updatePassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:529:22)
+    at E:\Working\Fintex\backend\src\routes\auth.route.js:679:28
+    at Layer.handle [as handle_request] (E:\Working\Fintex\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Working\Fintex\backend\node_modules\express\lib\router\route.js:149:13)
+    at E:\Working\Fintex\backend\src\middlewares\validate.js:17:14
+2025-06-30 12:11:07 [INFO]: 	::1 - - [30/Jun/2025:06:41:07 +0000] "POST /api/v1/auth/update-password HTTP/1.1" 500 1011 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:11:18 [ERROR]: Error: Illegal arguments: string, undefined
+    at _async (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:286:46)
+    at E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:306:20)
+    at userSchema.methods.isPasswordMatch (E:\Working\Fintex\backend\src\models\user.model.js:211:17)
+    at Object.updatePassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:529:22)
+    at E:\Working\Fintex\backend\src\routes\auth.route.js:679:28
+    at Layer.handle [as handle_request] (E:\Working\Fintex\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Working\Fintex\backend\node_modules\express\lib\router\route.js:149:13)
+    at E:\Working\Fintex\backend\src\middlewares\validate.js:17:14
+2025-06-30 12:11:18 [INFO]: 	::1 - - [30/Jun/2025:06:41:18 +0000] "POST /api/v1/auth/update-password HTTP/1.1" 500 1011 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:12:25 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:12:25 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:12:25 [INFO]: 	MongoDB connected
+2025-06-30 12:12:25 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:12:32 [ERROR]: Error: Illegal arguments: string, undefined
+    at _async (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:286:46)
+    at E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (E:\Working\Fintex\backend\node_modules\bcryptjs\dist\bcrypt.js:306:20)
+    at userSchema.methods.isPasswordMatch (E:\Working\Fintex\backend\src\models\user.model.js:211:17)
+    at Object.updatePassword (E:\Working\Fintex\backend\src\controllers\auth.controller.js:529:22)
+    at E:\Working\Fintex\backend\src\routes\auth.route.js:679:28
+    at Layer.handle [as handle_request] (E:\Working\Fintex\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Working\Fintex\backend\node_modules\express\lib\router\route.js:149:13)
+    at E:\Working\Fintex\backend\src\middlewares\validate.js:17:14
+2025-06-30 12:12:32 [INFO]: 	::1 - - [30/Jun/2025:06:42:32 +0000] "POST /api/v1/auth/update-password HTTP/1.1" 500 1011 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:12:38 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:13:10 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:13:10 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:13:10 [INFO]: 	MongoDB connected
+2025-06-30 12:13:10 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:13:12 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:13:26 [INFO]: 	Email sent to sachinrathodnic1@gmail.com: <3023617f-dd04-d671-9a9f-2914da6f0121@fintex.com>
+2025-06-30 12:13:26 [INFO]: 	Password change confirmation sent to sachinrathodnic1@gmail.com
+2025-06-30 12:13:26 [INFO]: 	Password change confirmation sent to sachinrathodnic1@gmail.com
+2025-06-30 12:13:26 [INFO]: 	::1 - - [30/Jun/2025:06:43:26 +0000] "POST /api/v1/auth/update-password HTTP/1.1" 200 58 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:17:20 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:17:20 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:17:20 [INFO]: 	MongoDB connected
+2025-06-30 12:17:20 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:17:31 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:18:16 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:18:16 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:18:16 [INFO]: 	MongoDB connected
+2025-06-30 12:18:16 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:18:18 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:28:35 [ERROR]: Error: ENOENT: no such file or directory, open 'E:\Working\Fintex\backend\src\templates\welcome-email.html'
+    at Object.readFileSync (node:fs:442:20)
+    at EmailService.sendWelcomeEmail (E:\Working\Fintex\backend\src\services\email.service.js:104:27)
+    at Object.register (E:\Working\Fintex\backend\src\controllers\auth.controller.js:149:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:163:22
+2025-06-30 12:28:35 [ERROR]: Error: ENOENT: no such file or directory, open 'E:\Working\Fintex\backend\src\templates\welcome-email.html'
+    at Object.readFileSync (node:fs:442:20)
+    at EmailService.sendWelcomeEmail (E:\Working\Fintex\backend\src\services\email.service.js:104:27)
+    at Object.register (E:\Working\Fintex\backend\src\controllers\auth.controller.js:149:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async E:\Working\Fintex\backend\src\routes\auth.route.js:163:22
+2025-06-30 12:28:35 [INFO]: 	::1 - - [30/Jun/2025:06:58:35 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 1033 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:28:47 [INFO]: 	::1 - - [30/Jun/2025:06:58:47 +0000] "GET /api/v1/users/pending-approvals HTTP/1.1" 200 36 "-" "PostmanRuntime/7.44.1"
+2025-06-30 12:32:45 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:32:46 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:32:46 [INFO]: 	MongoDB connected
+2025-06-30 12:32:46 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:32:48 [INFO]: 	Email server is ready to send messages
+2025-06-30 12:33:21 [INFO]: 	MongoDB connected successfully
+2025-06-30 12:33:21 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 12:33:21 [INFO]: 	MongoDB connected
+2025-06-30 12:33:21 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 12:33:23 [INFO]: 	Email server is ready to send messages
+2025-06-30 23:33:39 [INFO]: 	MongoDB connected successfully
+2025-06-30 23:33:39 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 23:33:39 [INFO]: 	MongoDB connected
+2025-06-30 23:33:39 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 23:33:41 [INFO]: 	Email server is ready to send messages
+2025-06-30 23:34:01 [INFO]: 	MongoDB connected successfully
+2025-06-30 23:34:01 [INFO]: 	MongoDB Connected: localhost
+2025-06-30 23:34:01 [INFO]: 	MongoDB connected
+2025-06-30 23:34:01 [INFO]: 	Server running on port 5000 in development mode
+2025-06-30 23:34:03 [INFO]: 	Email server is ready to send messages
